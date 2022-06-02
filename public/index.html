@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+   <head>
+      <meta charset = utf-8>
+      <title>Aplicaciones de Chat de WebSotket</title>
+		
+      <body>
+		
+         <section id = "wrapper">
+			
+            <header>
+               <h1>Chat websocket</h1>
+            </header>
+            <article>
+				
+              <form onsubmit = "addMessage(); return false;">
+                 <input type = "text" id = "chat websocket" placeholder = "type
+                 enter" />
+              </form>
+         
+              <p id = "status">Not connected</p>
+              <p>Users connected: <span id = "connected">0
+                 </span></p>
+              <ul id = "log"></ul>
+            <script id="app.js"></script>
+</article>
+<style>
+   #chat { width: 99%; }
+   .message { font-weight: bold; }
+   .message:before { content: ' '; color: rgb(187, 187, 187); font-size: 20px; }
+   
+   #log {
+      overflow: auto;
+      max-height: 500px;
+      list-style: none;
+      padding: 0;
+   }
+   
+   #log li {
+      border-top: 1px solid #ccc;
+      margin: 0;
+      padding: 30px 0;
+   }
+   
+   body {
+      font: normal 20px/25px "Arial", Arial, sans-serif;
+      background: rgb(237, 236, 237);
+      margin: 0;
+      margin-top: 90px;
+      padding: 0;
+   }
+   
+   section, header {
+      display: block;
+   }
+   
+   #wrapper {
+      width: 700px;
+      margin: 0 auto;
+      background: rebeccapurple;
+      border-radius: 30px;
+      border-top: 1px solid rebeccapurple;
+      padding-bottom: 20px;
+   }
